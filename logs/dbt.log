@@ -1,0 +1,30 @@
+[0m00:01:19.679027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016010C73080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000160116C0800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016010C2EE70>]}
+
+
+============================== 00:01:19.709911 | 07558fdb-1687-42d7-8d0a-59eca15e90fe ==============================
+[0m00:01:19.709911 [info ] [MainThread]: Running with dbt=1.11.7
+[0m00:01:19.709911 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\BROliveiWa12\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init spotify_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:01:19.820470 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\BROliveiWa12\.dbt
+[0m00:01:19.828488 [debug] [MainThread]: Starter project path: C:\Users\BROliveiWa12\OneDrive - NESTLE\Documents\Estudos\Engenharia de Dados\dbt-spotify-analytics\.venv\Lib\site-packages\dbt\include\starter_project
+[0m00:01:19.950001 [info ] [MainThread]: 
+Your new dbt project "spotify_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:01:19.950001 [info ] [MainThread]: Setting up your profile.
+[0m00:01:59.452032 [info ] [MainThread]: Profile spotify_dbt written to C:\Users\BROliveiWa12\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m00:01:59.467561 [debug] [MainThread]: Command `dbt init` succeeded at 00:01:59.467561 after 39.99 seconds
+[0m00:01:59.467561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001600F08EB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016011845400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016010C73B90>]}
+[0m00:01:59.467561 [debug] [MainThread]: Flushing usage events
+[0m00:02:00.467815 [debug] [MainThread]: An error was encountered while trying to flush usage events
