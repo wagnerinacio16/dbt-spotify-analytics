@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+htmlcov/
+.ide*
+.vscode/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.venv/
+
+# dbt
+target/
+dbt_packages/
+dbt_internal_packages/
+dbt_modules/
+logs/
+~dbt.log
+~dbt.log.*
+
+# dotenv
+.env
+.env*
+
+# Data files
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# Local/OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# AWS
+*.pem
+
+# Misc
+*.swp
+*~
