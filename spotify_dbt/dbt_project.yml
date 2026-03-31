@@ -26,11 +26,28 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
-# In this example config, we tell dbt to build all models in the example/
-# directory as views. These settings can be overridden in the individual model
-# files using the `{{ config(...) }}` macro.
+# ============================
+# Camadas de modelagem dbt
+# ============================
 models:
   spotify_dbt:
     # Config indicated by + and applies to all files under models/example/
-    example:
+
+    # Camada de padronização dos dados brutos.
+    # Aqui realiza limpeza inicial, renomeação de colunas,
+    # casting de tipos e padronização de nomenclaturas.
+    staging:
+      +materialized: view
+
+    # Camada intermediária de transformação.
+    # Aqui combina diferentes staging models, aplica transformações mais complexas, 
+    # Aplica regras de negócio e cria códigos modulares e mais genériocos, 
+    # que servirão de base para os modelos analíticos finais.
+    intermediate:
+      +materialized: view
+
+    # Camada final de modelos analíticos. 
+    # Aqui são construídas as tabelas utilizadas para análises,
+    # dashboards ou consumo por aplicações.   
+    marts:
       +materialized: view
